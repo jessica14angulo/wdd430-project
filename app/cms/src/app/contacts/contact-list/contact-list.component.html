@@ -1,0 +1,21 @@
+<div class="row">
+    <div class="col-xs-12">
+      <div class="list-group-item clearfix">
+        <div class="navbar navbar-default">
+          <div class="container-fluid">
+            <h1>Contacts</h1>
+            <button class="btn btn-success pull-right">New Contact</button>
+          </div>
+          <span *ngFor="let contact of contacts">
+            <h4 class="list-group-item-heading pull-left">{{ contact.name }}</h4>
+            <img
+              src="{{ contact.imagePath }}"
+              alt="{{ contact.name }}"
+              class="img-responsive pull-right"
+              style="max-height: 50px"
+            />
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
